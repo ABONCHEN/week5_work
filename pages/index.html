@@ -1,57 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
-  </head>
-  <body>
-    <%- include('./layout/header'); -%>
 
-    <h1 class="index-title">我是首頁</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>index</title>
+</head>
 
-    <div class="card" style="width: 18rem">
-      <img src="../assets/images/cat.jpg" class="card-img-top" alt="cat" />
-      <div class="card-body">
-        <h5 class="card-title">卡片元件</h5>
-        <p class="card-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odit, iusto odio assumenda alias id
-          nobis earum!
-        </p>
+<body>
+
+  <!-- 右邊欄位 -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary navbarcontainer  pt-4  pb-4 ">
+    <div class="container">
+      <div class="container-fluid d-flex pe-0 ps-0">
+        <a class="navbar-brand assignment fs-4 fw-bold" href="#">Assignment</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        </button>
+        <div class="collapse navbar-collapse fw-bold  justify-content-between" id="navbarNavDropdown">
+          <ul class="navbar-nav d-flex ">
+            <li class="nav-item dropdown">
+              <a class="nav-link fs-8" href="#" role="button" aria-expanded="false">
+                All Courses
+                <span class="material-symbols-outlined text-success ps-1 align-middle" >
+                  keyboard_arrow_down
+                </span>
+              </a>
+              <ul class="dropdown-menu">
+              </ul>
+            </li>
+          </ul>
+          <div class="headericon ">
+            <a href="">
+              <span class="material-symbols-outlined pe-2">
+                search
+              </span></a>
+            <a href="">
+              <span class="material-symbols-outlined bell ps-2">
+                notifications_active
+              </span></a>
+          </div>
+        </div>
       </div>
     </div>
+  </nav>
 
-    <!-- Modal 按鈕 -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      打開 modal
-    </button>
 
-    <!-- Modal 元件 -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal 標題</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  <!-- 中間欄位 -->
+  <div class="container">
+    <div class="dropdown d-flex justify-content-between">
+      <div class="btleft">
+        <button class="btn fw-bold" data-bs-toggle="dropdown" aria-expanded="false">
+          ALL(4)
+          <span class="material-symbols-outlined text-success align-bottom ps-2">
+            keyboard_arrow_down
+          </span>
+        </button>
+      </div>
+      <div class="btleft">
+        <button class="btn text-end text-secondary">
+          2 comments
+        </button>
+      </div>
+
+
+
+    </div>
+
+
+
+
+
+    <div class="page d-flex">
+      <div class="pageleft pe-3 ">
+        <div class="list-group rounded-1">
+          <a href="#" class="list-group-item list-group-item-action bg-light">
+            <div class="d-flex w-100 justify-content-between">
+              <p class="mb-1">Chapter Assignment 2</p>
+              <small class="text-body-secondary fw-bold">4 hrs ago</small>
+            </div>
+            <div class="d-flex w-100 justify-content-between">
+              <h6 class="mb-1 fw-bold">Please check this file…</h6>
+              <small class="text-body-tertiary">Emily Wang</small>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action ">
+            <div class="d-flex w-100 justify-content-between">
+              <p class="mb-1">Chapter Assignment 1</p>
+              <small class="text-body-secondary fw-bold">12 hrs ago</small>
+            </div>
+            <div class="d-flex w-100 justify-content-between">
+              <h6 class="mb-1 fw-bold">My Homework</h6>
+              <small class="text-body-tertiary">David Xu</small>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action ">
+            <div class="d-flex w-100 justify-content-between">
+              <p class="mb-1">Final Assignment</p>
+              <small class="text-body-secondary fw-bold">18 hrs ago</small>
+            </div>
+            <div class="d-flex w-100 justify-content-between">
+              <h6 class="mb-1 fw-bold">Have a problem with this…</h6>
+              <small class="text-body-tertiary">Tony Wei</small>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action ">
+            <div class="d-flex w-100 justify-content-between">
+              <p class="mb-1">Final Assignment</p>
+              <small class="text-body-secondary fw-bold">19 hrs ago</small>
+            </div>
+            <div class="d-flex w-100 justify-content-between">
+              <h6 class="mb-1 fw-bold">Did I do it right?</h6>
+              <small class="text-body-tertiary">Christina Lin</small>
+            </div>
+          </a>
+        </div>
+
+
+
+      </div>
+      <div class="pageright position-relative">
+        <div class="card rounded-1">
+          <div class="card-header d-flex justify-content-between align-items-center">
+            <div class="checkfile pe-1 ps-1 pt-1 pb-1">
+              <p class="fs-7 mb-0">Chapter Assignment 2 / HTML&CSS</p>
+              <h3 class="fs-6 text-deepfont fw-bold">Please check this file for me, thanks!</h3>
+            </div>
+            <div class="span"><span class="material-symbols-outlined">
+                more_vert
+              </span></div>
           </div>
-          <div class="modal-body">內容</div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
-            <button type="button" class="btn btn-primary">確定</button>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item ">
+              <div class="checkname  d-flex pt-2">
+                <div class="flex-shrink-0">
+                  <img src="../assets/images/emilywang.jpeg" alt="people-image" width="48" height="48"
+                    class="rounded-circle object-fit-cover">
+                </div>
+                <div class="flex-grow-1 ps-3">
+                  <div class="fw-bold fs-6">Emily Wang</div>
+                  <div class="text-secondary fs-7">10:38 AM (4 hours ago)</div>
+                  <div class="check_detial pt-2 pb-2 fs-8 border-bottom ">
+                    <p>
+                      Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the
+                      following code the height of the <span class="text-success">div</span> is bigger than the height
+                      of the <span class="text-success">img</span> ? There is a gap below the image, but it doesn’t
+                      seems to be a padding/margin. What is the gap or extra space below image?
+                    </p>
+                    <button type="button"
+                      class="btn rounded-1 bg-light border border-secondary-subtle fw-bold ps-3 pe-3 mb-2">
+                      <span class="material-symbols-outlined fs-5 text-end ">
+                        attach_file
+                      </span>
+                      HW-2-David.zip
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="checkname  d-flex pt-2">
+                <div class="flex-shrink-0">
+                  <img src="../assets/images/andychen.jpeg" alt="people-image" width="48" height="48"
+                    class="rounded-circle object-fit-cover">
+                </div>
+                <div class="flex-grow-1 ps-3">
+                  <div class="you d-flex justify-content-between">
+                    <div class="youcheck">
+                      <div class="fw-bold fs-6">Andy Chen (You)</div>
+                      <div class="text-secondary fs-7">13:24 AM (1 hours ago)</div>
+                    </div>
+                    <div class="youcheck_icon">
+                      <span class="material-symbols-outlined nofill_icon d-inline-block pe-2 ps-2">
+                        grade
+                      </span>
+                      <span class="material-symbols-outlined fill_icon d-inline-block  pe-2 ps-2">
+                        edit
+                      </span>
+                    </div>
+
+                  </div>
+                  <div class="check_detial pt-2 pb-2 fs-8 ">
+                    <p class="fs-8">
+                      Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that
+                      a, b, c and d sit on. There is space below that line for the descenders you find on letters like
+                      g, j, p and q. </p>
+                    <p>You can:</p>
+                    <p>• adjust the <span class="text-success d-inline-block pe-2">vertical-align </span>of the image to
+                      position it elsewhere (e.g. the <span class="text-success d-inline-block pe-2">middle </span>) or
+                    </p>
+                    <p>• change the <span class="text-success">display </span>so it isn’t inline. </p>
+
+                  </div>
+                </div>
+              </div>
+
+            </li>
+          </ul>
+        </div>
+
+        <div class="index_footer d-flex pt-5 justify-content-between align-items-center">
+          <div class="justify-content-center">
+            <span class="material-symbols-outlined d-inline-block pe-2 fs-4  ">
+              arrow_back_ios
+            </span>
+            <span class="material-symbols-outlined d-inline-block pe-2 fs-4 ">
+              arrow_forward_ios
+            </span>
+          </div>
+          <div class="replaybutton">
+            <button type="button" class="btn btn-outline-success rounded-0 ps-4 pe-4 me-2 fw-bold">Mark as read</button>
+            <button type="button" class="btn btn-success rounded-0 ps-4 pe-4 fw-bold" data-bs-toggle="collapse"
+              href="#bodytext" role="button" aria-expanded="false" aria-controls="bodytext">
+              Reply
+            </button>
+          </div>
+        </div>
+        
+        <div class="collapse position-absolute bottom-0 end-0 w-100" id="bodytext">
+          <div class="card card-body rounded-1 w-100"
+            style="padding: 0;min-height: 319px;">
+            <div class="footer_boxcontainer  md-2">
+              <div class="card-header d-flex align-items-center">
+                <div class="dropdown">
+                  <button class="btn  dropdown-toggle fw-bold" type="button" id="" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Body Text
+                  </button>
+                </div>
+                <span class="material-symbols-outlined d-inline-block ms-2 me-2 ">
+                  format_bold
+                </span>
+                <span class="material-symbols-outlined d-inline-block ms-2 me-2 ">
+                  format_italic
+                </span>
+                <span class="material-symbols-outlined d-inline-block ms-2 me-2 ">
+                  list
+                </span>
+                <span class="material-symbols-outlined d-inline-block ms-2 me-2 ">
+                  format_list_numbered
+                </span>
+                <span class="material-symbols-outlined d-inline-block ms-2 me-2 fill_icon">
+                  image
+                </span>
+                <span class="material-symbols-outlined d-inline-block ms-2 me-2 ">
+                  link
+                </span>
+                <span class="material-symbols-outlined d-inline-block ms-2 me-2 ">
+                  code
+                </span>
+              </div>
+              <div class="card-body">
+                <div class="card-title fs-6 text-lightlight" style="height: 190px;">Reply an answer…</div>
+                <div class="replaybutton d-flex justify-content-end align-items-end">
+                  <button type="button" class="btn btn-outline-success rounded-0 ps-4 pe-4 me-2 fw-bold" data-bs-toggle="collapse"
+                  href="#bodytext" role="button" aria-expanded="false" aria-controls="bodytext">Cancel</button>
+                  <button type="button" class="btn btn-success rounded-0 ps-4 pe-4 fw-bold" >
+                    Reply
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <%- include('./layout/footer'); -%>
+
+  </div>
+
+
+
+  <%- include('./layout/navbar'); -%>
+
+
+
 
     <script type="module" src="../main.js"></script>
-  </body>
+
+    </script>
+</body>
+
 </html>

@@ -1,3 +1,14 @@
-.index-title {
-  font-size: 100px;
+.pageleft,.pageright{
+  font-size:.75rem ;
+  border-color: $gray-400;
 }
+
+.pageleft{
+  width: 35%;
+}
+
+.pageright{
+  width: 65%;
+}
+
+

@@ -1,0 +1,67 @@
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+
+
+body{
+    font-family: "Lato", sans-serif;
+    line-height: 1.5;
+}
+
+
+
+a{
+    text-align: center;
+    color: inherit;
+    display: inline-block;
+}
+
+code{
+    font-family: "Roboto Mono",monospace;
+    color: $success;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin-bottom: 0;
+}
+
+ol ul{
+    text-decoration: none;
+}
+
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+
+
+.fill_icon{
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.nofill_icon{
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+  }
+
+.container{
+    width: calc(100% - 296px);
+    margin-left: 296px;
+    margin-right: auto;
+
+  }
